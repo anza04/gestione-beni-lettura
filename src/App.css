@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background: #006BB6;
+
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background: #006BB6;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.inputs{
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5%;
+  position: absolute;
+  justify-items: center;
+  transform: translate(-50%,-50%);
+  left: 30%;
+  top: 50%;
+}
+
+.inputs div{
+  flex-shrink: none;
+  width: 400px;
+  height: 10px;
+  padding: 2%;
+  border-radius: 5px;
+  border: solid black 4px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+#note, #nomeBene{
+ grid-column-start: 1;
+ grid-column-end: 3;
+ width: 98%;
+ height: 10px;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container input, .container button{
+  width: 10%;
+  height: 2%;
+  margin-bottom: 1%;
+  font-weight: bold;
+}
+
+.qr{
+  position:absolute;
+  background: white;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  color: WHITE;
+  font-size: 50px;
+  position:absolute;
+  top: 15%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
